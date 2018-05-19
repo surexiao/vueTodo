@@ -1,0 +1,6 @@
+﻿npm init:生成文件package.json
+cnpm install webpack vue vue-loader
+cnpm install css-loader vue-template-compiler
+cnpm install
+npm run build
+以上步骤操作完了可以生产dist/bundle.js
