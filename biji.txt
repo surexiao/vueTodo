@@ -4,3 +4,8 @@ cnpm install css-loader vue-template-compiler
 cnpm install
 npm run build
 以上步骤操作完了可以生产dist/bundle.js
+
+2-2webpack配置项目加载各种静态资源
+cnpm install
+cnpm install style-loader css-loader url-loader file-loader
+npm run build 
