@@ -15,3 +15,24 @@ node安装新版本（去官网下载）
 
 2-2webpack配置项目加载各种静态资源 步骤二：安装stylus-loader
 cnpm install stylus-loader stylus
+
+
+2-3 webpack-dev-server的配置和使用
+cnpm install webpack-dev-server
+webpack-dev-server是专门用于开发环境的
+
+"build": "webpack --config webpack.config.js"
+这句话的意思是通过npm run build去启动webpack.config.js文件
+
+cnpm install cross-env:设置环境变量，不想不同的平台写多个命令就可以只写一个脚本
+"build": "webpack --config webpack.config.js",
+变成
+"build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+
+生产html的webpack组件：
+cnpm install html-webpack-plugin
+
+cnpm install webpack@4.0.0 -g
+cnpm install --save-dev webpack@4.0.0
+cnpm install --save-dev webpack-cli
+node安装新版本（去官网下载）
