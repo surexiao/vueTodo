@@ -6,6 +6,12 @@ npm run build
 以上步骤操作完了可以生产dist/bundle.js
 
 2-2webpack配置项目加载各种静态资源
+步骤一：加载图片和css文件
 cnpm install
 cnpm install style-loader css-loader url-loader file-loader
 npm run build 
+以上步骤可能要安装webpack匹配版本：cnpm install --save-dev webpack@3.6.0
+node安装新版本（去官网下载）
+
+2-2webpack配置项目加载各种静态资源 步骤二：安装stylus-loader
+cnpm install stylus-loader stylus
