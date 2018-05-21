@@ -43,3 +43,14 @@ cnpm install webpack --save-dev
 cnpm install --save-dev webpack-dev-server@2.9.7
 
 2-3 http://localhost:8000/：访问成功
+
+3-2 配置vue的jsx写法以及postcss
+加载postcssloader以及autoprefixer实现自动根据兼容性的需求给css加私有前缀的功能，给开发带来便利
+cnpm install --save-dev postcss-loader autoprefixer babel-loader babel-core
+cnpm install --save-dev babel-preset-env babel-plugin-transform-vue-jsx
+peerDependencies WARNING babel-plugin-transform-vue-jsx@* requires a peer of babel-helper-vue-jsx-merge-props@^2.0.0 but none was installed
+
+cnpm install --save-dev babel-helper-vue-jsx-merge-props
+cnpm install --save-dev babel-plugin-syntax-jsx
+
+

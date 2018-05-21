@@ -5,8 +5,11 @@
 export default {
   data () {
     return {
-      text: 'abc'
+      text: 'abdedddeeeeeddc'
     }
+  },
+  render () {
+    createElement()
   }
 }
 </script>
