@@ -16,10 +16,21 @@ const config = {
         loader: 'vue-loader'
       },
       {
+        test: /\.jsx$/,
+        loader: 'babel-loader'
+      },
+      {
         test: /\.css$/,
         use: [
           'style-loader',
-          'css-loader'
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+            }
+          },
+          'stylus-loader'
         ]
       },
       {
@@ -55,12 +66,18 @@ const config = {
 }
 
 if (isDev) {
+  config.devtool = '#cheap-module-eval-source-map'
   config.devServer = {
     port: '8000',
     host: '0.0.0.0',
     overlay: {
       errors: true
-    }
- }
+    },
+    hot: true
+  }
+  config.plugins.push(
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoEmitOnErrorsPlugin()
+  ) 
 }
 module.exports = config
