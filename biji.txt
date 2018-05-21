@@ -36,3 +36,10 @@ cnpm install webpack@4.0.0 -g
 cnpm install --save-dev webpack@4.0.0
 cnpm install --save-dev webpack-cli
 node安装新版本（去官网下载）
+
+
+cnpm install webpack --save-dev -g
+cnpm install webpack --save-dev
+cnpm install --save-dev webpack-dev-server@2.9.7
+
+2-3 http://localhost:8000/：访问成功
